@@ -1,0 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
+public class Pop_Madalina_Cristina_Lab2Context(DbContextOptions<Pop_Madalina_Cristina_Lab2Context> options) : DbContext(options)
+{
+    public DbSet<Pop_Madalina_Cristina_Lab2.Models.Book> Book { get; set; } = default!;
+    public DbSet<Pop_Madalina_Cristina_Lab2.Models.Publisher> Publisher { get; set; } = default!;
+    public DbSet<Pop_Madalina_Cristina_Lab2.Models.Author> Author { get; set; } = default!;
+}
